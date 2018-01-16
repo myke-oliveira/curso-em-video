@@ -1,4 +1,7 @@
-a = input('Digite algo: ')
+#! /usr/bin/python3.6
+
+a = input('Digite algo: \033[30m')
+print('\033[m', end='')
 print('Numérico: {}'.format(a.isnumeric()))
 print('Alfabético: {}'.format(a.isalpha()))
 print('Alfanumérico: {}'.format(a.isalnum()))
